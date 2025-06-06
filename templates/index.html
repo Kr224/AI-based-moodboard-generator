@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moodboard Generator</title>
+</head>
+<body>
+    <h1>Enter a Mood or Theme</h1>
+    <form method="POST">
+        <input type="text" name="query" placeholder="e.g. Cozy aesthetic">
+        <button type="submit">Generate Moodboard</button>
+    </form>
+    <div>
+        {% for img in images %}
+            <img src="{{ img }}" style="width:200px; margin:10px;">
+        {% endfor %}
+    </div>
+</body>
+</html>
