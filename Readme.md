@@ -8,7 +8,7 @@ Inspired by Pinterest, this project helps users quickly visualize moods, aesthet
 - 🎨 **AI-Based Filtering** – Uses ML models to enhance search accuracy.
 - 🏞 **Image Grid Layout** – Displays moodboards in a Pinterest-style grid.
 - 🌙 **Dark Mode Toggle** – Easily switch between light and dark themes.
-- 🔍 **Search-Based Image Fetching** – Pulls images dynamically using the Pexels API.
+- 🔍 **Search-Based Image Fetching** – Pulls images dynamically using the Unsplash API.
 - ⚡ **Fast & Responsive** – Built with Flask and styled using CSS & JavaScript.
 
 ## 📦 Tech Stack
@@ -30,9 +30,9 @@ cd MoodBoardAI
 pip install flask requests tensorflow scikit-learn numpy pillow
 ````
 
-### Add your Pexels API key in app.py:
+### Add your unsplash API key in app.py:
 ````bash
-PEXELS_API_KEY = "your_api_key_here"
+UNSPLASH_API_KEY = "your_api_key_here"
 ````
 
 ### Run the Flask app:
