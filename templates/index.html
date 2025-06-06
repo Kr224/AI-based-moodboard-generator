@@ -2,17 +2,35 @@
 <html>
 <head>
     <title>Moodboard Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+<body onload="checkDarkMode()">
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
     <h1>Enter a Mood or Theme</h1>
-    <form method="POST">
+    <form method="POST" onsubmit="showLoader()">
         <input type="text" name="query" placeholder="e.g. Cozy aesthetic">
         <button type="submit">Generate Moodboard</button>
     </form>
-    <div>
+
+    <div class="image-grid">
         {% for img in images %}
-            <img src="{{ img }}" style="width:200px; margin:10px;">
+            <img src="{{ img }}">
         {% endfor %}
     </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            localStorage.setItem("dark-mode", document.body.classList.contains("dark-mode"));
+        }
+
+        function checkDarkMode() {
+            if (localStorage.getItem("dark-mode") === "true") {
+                document.body.classList.add("dark-mode");
+            }
+        }
+    </script>
+
 </body>
 </html>
