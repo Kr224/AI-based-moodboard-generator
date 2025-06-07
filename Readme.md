@@ -1,7 +1,7 @@
-# 🌟 MoodBoardAI – AI-Powered Moodboard Generator
+# 🌟 VibeCanvas – AI-Powered Moodboard Generator
 
 ## 🖼️ Overview
-MoodBoardAI is a simple AI-based moodboard generator that fetches relevant images based on user input and filters them using **machine learning** for improved accuracy.  
+VibeCanvas is a simple AI-based moodboard generator that fetches relevant images based on user input and filters them using **machine learning** for improved accuracy.  
 Inspired by Pinterest, this project helps users quickly visualize moods, aesthetics, and concepts.
 
 ## 🚀 Features
@@ -15,14 +15,14 @@ Inspired by Pinterest, this project helps users quickly visualize moods, aesthet
 - **Frontend:** HTML, CSS (Grid Layout, Dark Mode)
 - **Backend:** Flask (Python)
 - **Machine Learning:** TensorFlow (MobileNetV2), scikit-learn
-- **Image Fetching:** Pexels API
+- **Image Fetching:** Unsplash API
 
 ## 🔧 Installation & Setup
 
 ### Clone this repository:
 ```bash
-git clone https://github.com/your-username/MoodBoardAI.git
-cd MoodBoardAI
+git clone https://github.com/your-username/VibeCanvas.git
+cd VibeCanvas
 ```
 
 ### Install dependencies:
@@ -46,8 +46,8 @@ http://127.0.0.1:5000/
 ````
 
 ### 🖥️ Project Structure:
-
-MoodBoardAI/
+````bash
+VibeCanvas/
 ├── app.py              # Flask backend
 ├── ml_filter.py        # AI-based image filtering
 ├── static/
@@ -55,5 +55,5 @@ MoodBoardAI/
 ├── templates/
 │   ├── index.html      # Frontend UI
 ├── README.md           # Documentation
-
+````
 
